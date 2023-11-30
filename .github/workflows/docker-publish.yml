@@ -28,4 +28,6 @@ jobs:
 
     - name: Push Docker Image to Docker Hub
       if: success()
-      run: docker push ram222003/repoone:image1
+      run: |
+        docker tag image2 ram222003/repoone:image1
+        docker push ram222003/repoone:image1
