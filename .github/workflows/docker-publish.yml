@@ -20,7 +20,7 @@ jobs:
         ## docker buildx create --use
         ## docker buildx inspect --bootstrap
         ## docker buildx build --platform linux/amd64,linux/arm64 -t your-username/your-repo:latest .
-        docker build -t image1 .
+        docker build -t image2 .
         
     - name: Login to Docker Hub
       if: success()
